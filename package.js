@@ -10,18 +10,16 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Npm.depends({ humm: '0.0.5' });
-
+Npm.depends({ humm: '0.0.7' });
 
 Package.onUse(function(api) {
 
   api.versionsFrom('1.1');
   api.use(['cosmos:browserify@0.9.2'], 'client'); // need this package to expose to client
-
+  api.use(['underscore'], ['client', 'server']);
 
   api.addFiles('humm.browserify.js', 'client');
   api.addFiles('humm.js', 'server');
   api.export('humm', ['client', 'server']);
-
 
 });
