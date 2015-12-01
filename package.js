@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'moeebadr:humm',
+  name: 'humm:humm',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: 'Use our API to build your own innovative -- and 100% legal -- music solutions or build music into your services.',
